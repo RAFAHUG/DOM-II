@@ -19,6 +19,9 @@ navLink.forEach ( anchor => anchor.addEventListener( 'click' , (event) => {
     `) ; 
 }) ) ; 
 
+navLink.forEach (anchor => anchor.addEventListener ("focus", (event)=>{
+    console.log (`I AM ${event.type}`) ;
+}))
 const navContainer = document.querySelector(".container ") ; 
 console.log(navContainer) ;
 
@@ -70,3 +73,13 @@ console.log(destination) ;
 destination.forEach (destination => destination.addEventListener('mouseenter', (event)=>{
     event.target.style.backgroundColor = "LightPink" ; 
 })) ; 
+
+// destination.forEach(destination => destination.addEventListener("focus", (event)=>{
+//     console.log(`I AM ${event.type}`)
+// })) ; 
+
+// focus.addEventListener("focus", (event)=>{
+//     console.log(`I AM ${event.type}`)
+// }) ; 
+
+
